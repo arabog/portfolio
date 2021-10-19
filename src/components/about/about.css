@@ -1,0 +1,157 @@
+.a {
+          margin-bottom: 20px;
+          padding: 0 20px;
+}
+
+.a-left {
+          margin-bottom: 80px;
+          width: 100%;
+}
+
+.a-right {
+          text-align: center;
+}
+
+.a-card {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+}
+
+.a-img {
+          width: 70%;
+          height: 70%;
+
+          object-fit: cover;
+          /* border-radius: 20px; */
+
+}
+
+.a-award-img {
+          width: 100%;
+          height: 100%;
+
+          object-fit: cover;
+}
+
+.a-title {
+          font-weight: 400;
+          font-size: 32px;
+}
+
+.a-sub {
+          margin: 20px 0;
+}
+
+.a-desc, .a-sub {
+          font-weight: 300;
+}
+
+.a-award {
+          margin: 30px 0;
+}
+
+.a-award-title {
+          color: #555;
+}
+
+.a-award-img {
+          margin-bottom: 20px;
+}
+
+@media screen and (min-width: 720px) {
+          .a {
+                    display: flex;
+                    align-items: center;
+
+                    padding: 40px 20px;
+
+                    height: 100vh;
+                    
+          }
+
+          .a-left {
+                    flex: 1;
+
+                    position: relative;
+                    height: 100%;
+                    margin-bottom: 0;
+
+                    width: 100%;
+
+                    display: flex;
+
+                    position: relative;
+          }
+
+          .a-left.wrapper {
+                    display: flex;
+                    align-items: center;
+
+                    width: 100%;
+                    padding: 0 10px 0 10px;
+          }
+
+          .a-card.bg {
+                    position: static;
+
+                    width: 70%;
+          
+                    background: #333;
+
+                    border-radius: 20px;
+                    margin-left: 40px;
+          }
+
+
+          .a-card {
+                    position: absolute;
+                    top: 160px;
+                    left: 90px;
+
+
+                    width: 70%;
+                    height: 70vh;
+          }
+
+          
+          .a-img {
+                    width: 100%;
+                    height: 100%;
+          
+                    object-fit: cover;
+
+                    border-radius: 20px;
+
+          }
+
+          .a-right {
+                    flex: 1;
+                    margin-left: 20px;
+
+          }
+
+
+          /* award */
+          .a-award {
+                    display: flex;
+                    align-items: center;
+
+                    /* margin: 0; */
+
+          }
+
+          .a-award-img {
+                    width: 120px;
+                    height: 120px;
+          
+                    border-radius: 20px;
+                    margin-bottom: 0;
+                    margin-right: 10px;
+          }
+
+          .a-award-texts {
+                    width: 70%;
+          }
+
+}
