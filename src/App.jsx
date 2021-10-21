@@ -3,6 +3,7 @@ import "./App.css"
 import Intro from "./components/intro/Intro"
 import About from "./components/about/About"
 import Toggle from "./components/toggle/Toggle";
+import ProductList from "./components/productList/ProductList"
 
 import { useContext } from "react";
 import { ThemeContext } from "./context";
@@ -10,7 +11,6 @@ import { ThemeContext } from "./context";
 
 const App = () => {
 	const theme = useContext(ThemeContext)
-	console.log(theme)
 	const darkMode = theme.state.darkMode
 
 
@@ -24,8 +24,12 @@ const App = () => {
 			}
 		>
 			<Toggle />
+
 			<Intro />
+			
 			<About />
+			
+			<ProductList />
 		</div>
 	);
 }
