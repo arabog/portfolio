@@ -1,17 +1,6 @@
 import { createContext, useReducer} from "react"
 
 
-
-export const ThemeContext = createContext()
-
-
-
-const INITIAL_STATE = {
-          darkMode: false
-}
-
-
-
 const themeReducer = (state, action) => {
           switch(action.type) {
                     case "TOGGLE": {
@@ -25,6 +14,13 @@ const themeReducer = (state, action) => {
           }
 }
 
+
+export const ThemeContext = createContext()
+
+
+const INITIAL_STATE = {
+          darkMode: false
+}
 
 
 export const ThemeProvider = (props) => {
